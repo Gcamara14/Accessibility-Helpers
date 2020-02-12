@@ -1,0 +1,63 @@
+#skiptocontent a,
+.skiplinks a {
+  padding: 6px;
+  position: absolute;
+  top: -80px;
+  left: 0px;
+  color: #000;
+  border-right: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+  border-bottom-right-radius: 8px;
+  background: #ffee2e;
+  transition: top 2s ease-out;
+  z-index: 100;
+}
+@media (prefers-reduced-motion: reduce) {
+  #skiptocontent a,
+  .skiplinks a {
+    transition: none;
+  }
+}
+#skiptocontent a:focus,
+.skiplinks a:focus {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  outline-color: transparent;
+  transition: top 0.1s ease-in;
+  text-decoration: underline;
+}
+@media (prefers-reduced-motion: reduce) {
+  #skiptocontent a:focus,
+  .skiplinks a:focus {
+    transition: none;
+  }
+}
+*::-moz-selection {
+  background: #ffee2e;
+  color: #28353c;
+}
+*::selection {
+  background: #ffee2e;
+  color: #28353c;
+}
+body.user-is-tabbing main *:focus,
+body.user-is-tabbing footer *:focus,
+body.user-is-tabbing header *:focus {
+  outline: 2px solid #7aacfe !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+  background-color: #ffee2e !important;
+  color: #000 !important;
+  text-decoration: underline !important;
+}
+body.user-is-tabbing footer form *:focus,
+body.user-is-tabbing form *:focus {
+  text-decoration: none !important;
+}
+body.user-is-tabbing .custom-class:focus{
+  outline: 2px solid #7aacfe !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+  background-color: #ffee2e !important;
+  color: #000 !important;
+  text-decoration: underline !important;
+}
