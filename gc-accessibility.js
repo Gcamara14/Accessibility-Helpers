@@ -2,6 +2,7 @@
 ** A compiliation of helpful accessibility JS widgets
 ** Author: Giovani Camara
 ** Version: 1.0.0
+** URL: giovanicamara.com
 **
 ** Please maintain nicely.
 ** Let Gio know if you find anything that could use updating or if you find anything questionable.
